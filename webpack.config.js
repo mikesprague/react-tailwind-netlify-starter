@@ -2,6 +2,8 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const path = require('path');
 const purgecss = require('@fullhuman/postcss-purgecss');
+const tailwindcss = require('tailwindcss');
+const webpack = require('webpack');
 const CompressionPlugin = require('compression-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -10,6 +12,8 @@ const TerserPlugin = require('terser-webpack-plugin');
 const WorkboxPlugin = require('workbox-webpack-plugin');
 
 const mode = process.env.NODE_ENV;
+
+const cssWhitelistClassArray = [];
 
 const webpackRules = [
   {
@@ -38,14 +42,26 @@ const webpackRules = [
           plugins() {
             return [
               autoprefixer(),
+              tailwindcss(),
               cssnano({
                 preset: 'default',
               }),
               purgecss({
-                content: ['./src/*.html', './src/js/modules/*.js'],
+                content: [
+                  './public/index.html',
+                  './src/**/*.js',
+                  './src/**/*.jsx',
+                ],
+                defaultExtractor: (content) => {
+                  // Capture as liberally as possible, including things like `h-(screen-1.5)`
+                  const broadMatches = content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [];
+                  // Capture classes within other delimiters like .block(class="w-1/2") in Pug
+                  const innerMatches = content.match(/[^<>"'`\s.()]*[^<>"'`\s.():]/g) || [];
+                  return broadMatches.concat(innerMatches);
+                },
                 fontFace: true,
-                // whitelistPatterns: [/your-class-name/],
-                // whitelistPatternsChildren: [/your-class-name/],
+                whitelistPatterns: cssWhitelistClassArray,
+                whitelistPatternsChildren: cssWhitelistClassArray,
               }),
             ];
           },
@@ -60,8 +76,8 @@ const webpackRules = [
     ],
   },
   {
-    test: /\.(js)$/,
-    exclude: [/node_modules/, /lambda/],
+    test: /\.(js|jsx)$/,
+    exclude: [/node_modules/, /lambda/, /sw.js/, /service-worker.js/],
     use: [{
       loader: 'babel-loader',
     }],
@@ -73,42 +89,31 @@ const webpackPlugins = [
     filename: './css/styles.css',
     chunkFilename: './css/[id].css',
   }),
-
+  // new CopyWebpackPlugin({
+  //   patterns: [
+  //     {
+  //       from: './public/images/**/*',
+  //       to: './images',
+  //       flatten: true,
+  //       force: true,
+  //     },
+  //   ],
+  // }),
+  // new CopyWebpackPlugin({
+  //   patterns: [
+  //     {
+  //       from: './public/fonts/*.woff2',
+  //       to: './fonts',
+  //       flatten: true,
+  //       force: true,
+  //     },
+  //   ],
+  // }),
   new CopyWebpackPlugin({
     patterns: [
       {
-        from: `./src/manifest.json`,
+        from: './public/*.*',
         to: './',
-        flatten: true,
-        force: true,
-      },
-    ],
-  }),
-  new CopyWebpackPlugin({
-    patterns: [
-      {
-        from: './src/images/**/*',
-        to: './images',
-        flatten: true,
-        force: true,
-      },
-    ],
-  }),
-  new CopyWebpackPlugin({
-    patterns: [
-      {
-        from: `./src/index.html`,
-        to: './index.html',
-        force: true,
-        flatten: true,
-      },
-    ],
-  }),
-  new CopyWebpackPlugin({
-    patterns: [
-      {
-        from: './src/fonts/*.woff2',
-        to: './fonts',
         flatten: true,
         force: true,
       },
@@ -119,6 +124,7 @@ const webpackPlugins = [
     clientsClaim: true,
     skipWaiting: true,
   }),
+  new webpack.HotModuleReplacementPlugin()
 ];
 
 if (mode === 'production') {
@@ -135,15 +141,26 @@ if (mode === 'production') {
 
 module.exports = {
   entry: [
-    './src/js/app.js',
+    './src/index.js',
   ],
   devtool: 'source-map',
+  resolve: {
+    extensions: ['*', '.js', '.jsx'],
+  },
   output: {
     filename: './js/bundle.js',
     chunkFilename: './js/[name].bundle.js',
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'build'),
   },
   mode,
+  devServer: {
+    contentBase: path.join(__dirname, 'public/'),
+    hotOnly: true,
+    open: true,
+    port: 3000,
+    publicPath: 'http://localhost:3000/',
+    stats: 'minimal',
+  },
   module: {
     rules: webpackRules,
   },

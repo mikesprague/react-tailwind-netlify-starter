@@ -26,7 +26,7 @@ export function initServiceWorker () {
   register('/service-worker.js', {
     updated(registration) {
       console.log(`Updated to the latest version.\n${registration}`);
-      resetData();
+      // resetData();
       window.location.reload(true);
     },
     offline() {
