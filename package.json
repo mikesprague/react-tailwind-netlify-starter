@@ -30,6 +30,7 @@
   "homepage": "",
   "license": "MIT",
   "dependencies": {
+    "@tailwindcss/typography": "^0.2.0",
     "axios": "^0.19.2",
     "cross-env": "^7.0.2",
     "dayjs": "^1.8.30",
