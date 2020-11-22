@@ -1,19 +1,19 @@
-# netlify-starter
+# netlify-react-tailwind-starter
 
 _**NOTE: Documentation in progress**_
 
 My basic project starter for Netlify (hosted) projects.
 
-Includes dependencies I commonly use when bootsrapping a new Netlify project.
-
-Sets up a barebones React PWA front-end with a Netlify function that can be used on the back-end.
+Sets up a barebones React/Tailwind CSS PWA front-end with a Netlify function that can be used on the back-end.
 
 ## Getting started
 
-1. `git clone https://github.com/mikesprague/netlify-starter.git your-project-name`
+1. `git clone https://github.com/mikesprague/netlify-react-tailwind-starter.git your-project-name`
 1. `cd your-project-name`
-1. `rm -rf .git && git init`
-1. `npm start`
+1. `rm -rf .git`
+1. `git init`
+1. `yarn`
+1. `yarn start`
 
 ## License
 
