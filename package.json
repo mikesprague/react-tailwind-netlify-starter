@@ -1,7 +1,7 @@
 {
-  "name": "netlify-react-tailwind-starter",
+  "name": "react-tailwindcss-netlify-starter",
   "version": "0.1.0",
-  "description": "Project template for barebones React/Tailwind CSS PWA front-end with a Netlify function that can be used on the back-end",
+  "description": "Project template for a barebones React/Tailwind CSS PWA front-end hosted on Netlify with a Netlify function that can be used on the back-end",
   "private": true,
   "engines": {
     "node": ">= 12.x",
@@ -22,7 +22,7 @@
   },
   "keywords": [],
   "repository": {
-    "url": "https://github.com/mikesprague/netlify-starter"
+    "url": "https://github.com/mikesprague/react-tailwindcss-netlify-starter"
   },
   "author": {
     "name": "Michael Sprague",
