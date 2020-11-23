@@ -1,4 +1,6 @@
+/* eslint-disable global-require */
 const colors = require('tailwindcss/colors');
+
 const cssSafelistClassArray = [];
 
 module.exports = {
