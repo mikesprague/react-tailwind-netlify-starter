@@ -38,10 +38,9 @@ export default function App() {
           {data
             ? (
               <>
-                <FontAwesomeIcon icon="quote-left" fixedWidth />
+	        <FontAwesomeIcon icon="quote-left" fixedWidth />
                 {data.joke}
-                <FontAwesomeIcon icon="quote-right" fixedWidth />
-              </>
+	      </>
             )
             : '... loading dad joke ...'}
         </blockquote>
