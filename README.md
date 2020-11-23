@@ -6,6 +6,10 @@ My basic project starter for Netlify (hosted) projects.
 
 Sets up a barebones React/Tailwind CSS PWA front-end with a Netlify function that can be used on the back-end.
 
+- React 17.x
+- Tailwind CSS 2.x
+- Webpack 5.x
+
 ## Getting started
 
 1. `git clone https://github.com/mikesprague/netlify-react-tailwind-starter.git your-project-name`
