@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const axios = require('axios').default;
 
 exports.handler = async (event, context, callback) => {
@@ -6,12 +7,15 @@ exports.handler = async (event, context, callback) => {
     'Access-Control-Allow-Headers': 'Content-Type',
   };
 
-  const apiUrl = '';
+  const apiUrl = 'https://icanhazdadjoke.com';
 
-  const returnData = await axios.get(apiUrl)
-    .then(response => {
-      return response.data;
-    }).catch((error) => {
+  const returnData = await axios.get(apiUrl, {
+    headers: {
+      Accept: 'application/json',
+    },
+  })
+    .then((response) => response.data)
+    .catch((error) => {
       console.error(error);
       return {
         headers: callbackHeaders,
