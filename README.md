@@ -1,4 +1,4 @@
-# netlify-react-tailwind-starter
+# react-tailwindcss-netlify-starter 
 
 _**NOTE: Documentation in progress**_
 
