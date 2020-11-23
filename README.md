@@ -1,5 +1,7 @@
 # react-tailwindcss-netlify-starter 
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/538d34a9-928d-4e3a-813b-367e697aa6c1/deploy-status)](https://app.netlify.com/sites/react-tailwindcss-netlify-starter/deploys)
+
 _**NOTE: Documentation in progress**_
 
 My basic project starter for Netlify (hosted) projects.
