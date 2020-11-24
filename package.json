@@ -1,7 +1,7 @@
 {
   "name": "react-tailwindcss-netlify-starter",
   "version": "0.1.0",
-  "description": "Project template for a barebones React/Tailwind CSS PWA front-end hosted on Netlify with a Netlify function that can be used on the back-end",
+  "description": "My project template for a barebones React/Tailwind CSS PWA front-end hosted on Netlify with an example Netlify function that can be used on the back-end",
   "private": true,
   "engines": {
     "node": ">= 12.x",
@@ -34,7 +34,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.12",
+    "@fortawesome/react-fontawesome": "^0.1.13",
     "@hot-loader/react-dom": "^17.0.0",
     "@tailwindcss/typography": "^0.3.1",
     "@tippyjs/react": "^4.2.0",
@@ -47,7 +47,7 @@
     "react-hot-loader": "^4.13.0",
     "react-dom": "^17.0.1",
     "register-service-worker": "^1.7.1",
-    "snyk": "^1.430.1",
+    "snyk": "^1.430.2",
     "tailwindcss": "^2.0.1"
   },
   "devDependencies": {
