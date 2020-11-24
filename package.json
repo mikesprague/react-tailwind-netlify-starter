@@ -51,7 +51,7 @@
     "tailwindcss": "^2.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.7",
+    "@babel/core": "^7.12.8",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/plugin-proposal-export-default-from": "^7.12.1",
     "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
@@ -63,8 +63,8 @@
     "@babel/runtime": "^7.12.5",
     "@fullhuman/postcss-purgecss": "^3.0.0",
     "@hot-loader/react-dom": "^17.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.8.1",
-    "@typescript-eslint/parser": "^4.8.1",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
     "autoprefixer": "^10.0.2",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.1",
@@ -96,7 +96,7 @@
     "netlify-cli": "^2.68.7",
     "netlify-lambda": "^2.0.1",
     "node-sass": "^5.0.0",
-    "postcss": "^8.1.9",
+    "postcss": "^8.1.10",
     "postcss-cli": "^8.3.0",
     "postcss-loader": "^4.1.0",
     "prettier": "^2.2.0",
