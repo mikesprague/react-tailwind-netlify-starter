@@ -34,7 +34,7 @@ export default function App() {
             <a href="https://icanhazdadjoke.com/api" rel="noopener noreferrer" target="_blank">(datasource: https://icanhazdadjoke.com/api)</a>
           </small>
         </h2>
-        <blockquote className="mx-auto text-3xl italic leading-normal text-center">
+        <blockquote className="mx-auto text-blue-200 text-3xl italic leading-normal text-center">
           {data
             ? (
               <>
