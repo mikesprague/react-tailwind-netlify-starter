@@ -1,23 +1,12 @@
 /* eslint-disable global-require */
 const colors = require('tailwindcss/colors');
 
-const cssSafelistClassArray = [];
-
 module.exports = {
   purge: {
     content: [
       './public/index.html',
       './src/components/**/*.js',
     ],
-    preserveHtmlElements: false,
-    options: {
-      safeList: cssSafelistClassArray,
-      defaultExtractor: (content) => {
-        const broadMatches = content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [];
-        const innerMatches = content.match(/[^<>"'`\s.()]*[^<>"'`\s.():]/g) || [];
-        return broadMatches.concat(innerMatches);
-      },
-    },
   },
   darkMode: false,
   theme: {
