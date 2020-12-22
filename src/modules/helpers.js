@@ -2,7 +2,6 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { register } from 'register-service-worker';
-// import { resetData } from './local-storage';
 
 export function initIcons() {
   library.add(
@@ -32,7 +31,6 @@ export function initServiceWorker() {
   register('/service-worker.js', {
     updated(registration) {
       console.log(`Updated to the latest version.\n${registration}`);
-      // resetData();
       window.location.reload(true);
     },
     offline() {
