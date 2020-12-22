@@ -16,8 +16,6 @@ export default function App() {
       setData(remoteData);
     };
     getRemoteData();
-
-    return () => { setData(null); };
   }, []);
 
   return (
@@ -31,18 +29,20 @@ export default function App() {
           Example data below fetched from Netlify function
           <br />
           <small className="text-base font-normal text-center">
-            <a href="https://icanhazdadjoke.com/api" rel="noopener noreferrer" target="_blank">(datasource: https://icanhazdadjoke.com/api)</a>
+            <a href="https://icanhazdadjoke.com/api" rel="noopener noreferrer" target="_blank">
+              (datasource: https://icanhazdadjoke.com/api)
+            </a>
           </small>
         </h2>
-        <blockquote className="mx-auto text-blue-200 text-3xl italic leading-normal text-center">
-          {data
-            ? (
-              <>
-                <FontAwesomeIcon icon="quote-left" fixedWidth />
-                {data.joke}
-              </>
-            )
-            : '... loading dad joke ...'}
+        <blockquote className="mx-auto text-3xl italic leading-normal text-center text-blue-200">
+          {data ? (
+            <>
+              <FontAwesomeIcon icon="quote-left" fixedWidth />
+              {data.joke}
+            </>
+          ) : (
+            '... loading dad joke ...'
+          )}
         </blockquote>
       </div>
       <div className="fixed min-w-full text-base text-center bottom-2">
