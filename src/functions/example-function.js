@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 const axios = require('axios').default;
 
 exports.handler = async (event, context, callback) => {
