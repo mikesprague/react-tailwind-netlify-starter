@@ -150,7 +150,9 @@
       "airbnb",
       "plugin:react/recommended",
       "plugin:react-hooks/recommended",
-      "plugin:jsx-a11y/recommended"
+      "plugin:jsx-a11y/recommended",
+      "prettier",
+      "prettier/react"
     ],
     "plugins": [
       "compat",
@@ -164,6 +166,8 @@
       "security"
     ],
     "parserOptions": {
+      "ecmaVersion": 11,
+      "allowImportExportEverywhere": true,
       "parser": "babel-parser",
       "ecmaFeatures": {
         "jsx": true
@@ -208,9 +212,6 @@
     }
   },
   "prettier": {
-    "plugins": [
-      "all"
-    ],
     "printWidth": 120,
     "semi": true,
     "singleQuote": true,
