@@ -14,7 +14,7 @@ Sets up a barebones React/Tailwind CSS PWA front-end with a Netlify function tha
 
 ## Getting started
 
-1. `git clone https://github.com/mikesprague/netlify-react-tailwind-starter.git your-project-name`
+1. `git clone https://github.com/mikesprague/react-tailwind-netlify-starter.git your-project-name`
 1. `cd your-project-name`
 1. `rm -rf .git`
 1. `git init`
