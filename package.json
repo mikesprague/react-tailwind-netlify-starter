@@ -185,30 +185,7 @@
         }
       ],
       "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
-      "curly": "error",
-      "object-curly-newline": "error",
-      "semi": "error",
-      "prefer-arrow-callback": "warn",
-      "arrow-spacing": "error",
-      "no-param-reassign": "warn",
-      "eqeqeq": "error",
-      "quotes": [
-        "error",
-        "single",
-        {
-          "avoidEscape": true,
-          "allowTemplateLiterals": true
-        }
-      ],
-      "max-len": [
-        "warn",
-        {
-          "code": 120,
-          "tabWidth": 2,
-          "ignoreUrls": true
-        }
-      ]
+      "react-hooks/exhaustive-deps": "warn"
     }
   },
   "prettier": {
