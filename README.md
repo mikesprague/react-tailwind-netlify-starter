@@ -12,6 +12,8 @@ Sets up a barebones React/Tailwind CSS PWA front-end with a Netlify function tha
 - Tailwind CSS 2.x
 - Webpack 5.x
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mikesprague/react-tailwind-netlify-starter)
+
 ## Getting started
 
 1. `git clone https://github.com/mikesprague/react-tailwind-netlify-starter.git your-project-name`
