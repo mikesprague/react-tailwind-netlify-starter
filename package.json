@@ -48,7 +48,7 @@
     "react-hot-loader": "^4.13.0",
     "register-service-worker": "^1.7.2",
     "snyk": "^1.639.0",
-    "tailwindcss": "^2.2.0"
+    "tailwindcss": "^2.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
