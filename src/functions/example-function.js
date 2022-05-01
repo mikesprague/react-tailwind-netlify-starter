@@ -8,11 +8,13 @@ exports.handler = async (event, context, callback) => {
 
   const apiUrl = 'https://icanhazdadjoke.com';
 
-  const returnData = await axios.get(apiUrl, {
-    headers: {
-      Accept: 'application/json',
-    },
-  })
+  const returnData = await axios
+    .get(apiUrl, {
+      headers: {
+        Accept: 'application/json',
+        'User-Agent': 'React Tailwind Netlify Starter Template (Example Serverless Function)',
+      },
+    })
     .then((response) => response.data)
     .catch((error) => {
       console.error(error);
