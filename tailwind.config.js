@@ -2,26 +2,20 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  purge: {
-    content: [
-      './public/index.html',
-      './src/components/**/*.js',
-    ],
-  },
-  darkMode: false,
+  content: ['./public/index.html', './src/components/**/*.js'],
   theme: {
     colors: {
       amber: colors.amber,
-      black: '#000',
+      black: colors.black,
       blue: colors.blue,
-      bluegray: colors.blueGray,
-      coolgray: colors.coolGray,
+      bluegray: colors.slate,
+      coolgray: colors.gray,
       cyan: colors.cyan,
       emerald: colors.emerald,
       gray: colors.gray,
       green: colors.green,
       indigo: colors.indigo,
-      lightblue: colors.lightBlue,
+      sky: colors.sky,
       lime: colors.lime,
       orange: colors.orange,
       pink: colors.pink,
@@ -29,18 +23,17 @@ module.exports = {
       red: colors.red,
       rose: colors.rose,
       teal: colors.teal,
-      truegray: colors.trueGray,
+      truegray: colors.neutral,
       violet: colors.violet,
-      warmgray: colors.warmGray,
-      white: '#fff',
+      warmgray: colors.stone,
+      white: colors.white,
       yellow: colors.yellow,
+      transparent: colors.transparent,
     },
     extend: {},
   },
   variants: {
     extend: {},
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require('@tailwindcss/typography')],
 };
