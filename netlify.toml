@@ -3,16 +3,16 @@
     FONT_AWESOME_TOKEN="Your fontawesome token here"
 
 [build]
-  command = "yarn build"
+  command = "npm run build"
   functions = "lambda"
   publish="build"
 
 [dev]
-  command = "yarn start"
+  command = "npm start"
   port = 3000
   publish = "build"
   functionsPort = 9000
 
 [production]
-  command = "yarn build"
+  command = "npm run build"
   publish = "build"
