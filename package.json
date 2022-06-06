@@ -38,7 +38,7 @@
     "@tailwindcss/typography": "^0.5.2",
     "@tippyjs/react": "^4.2.6",
     "axios": "^0.27.2",
-    "dayjs": "^1.11.2",
+    "dayjs": "^1.11.3",
     "he": "^1.2.0",
     "nanoid": "^3.3.4",
     "prop-types": "^15.8.1",
