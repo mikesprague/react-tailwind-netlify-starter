@@ -1,6 +1,4 @@
 [template]
-  [template.environment]
-    FONT_AWESOME_TOKEN="Your fontawesome token here"
 
 [build]
   command = "npm run build"

@@ -1,4 +1,4 @@
-# react-tailwind-netlify-starter 
+# react-tailwind-netlify-starter
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/538d34a9-928d-4e3a-813b-367e697aa6c1/deploy-status)](https://app.netlify.com/sites/react-tailwind-netlify-starter/deploys)
 
@@ -8,9 +8,9 @@ My basic project starter for Netlify (hosted) projects.
 
 Sets up a barebones React/Tailwind CSS PWA front-end with a Netlify function that can be used on the back-end.
 
-- React 17.x
-- Tailwind CSS 2.x
-- Webpack 5.x
+- React
+- Tailwind
+- Vite
 
 ## Getting started
 
@@ -18,8 +18,8 @@ Sets up a barebones React/Tailwind CSS PWA front-end with a Netlify function tha
 1. `cd your-project-name`
 1. `rm -rf .git`
 1. `git init`
-1. `yarn`
-1. `yarn start`
+1. `npm install`
+1. `npm start`
 
 ## License
 

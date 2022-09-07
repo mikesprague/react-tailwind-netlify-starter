@@ -1,15 +1,17 @@
-// sass-lint:disable no-important no-vendor-prefixes
-$color-body-bg: #121212;
-$color-body-text: #efefef;
+@tailwind base;
+@tailwind components;
 
 * {
-  -moz-osx-font-smoothing: grayscale !important;
-  -webkit-font-smoothing: subpixel-antialiased !important;
-  text-rendering: optimizeLegibility !important;
+  @apply subpixel-antialiased;
 }
 
 html,
 body {
-  background-color: $color-body-bg;
-  color: $color-body-text;
+  @apply bg-gradient-to-br to-bluegray-600 from-cyan-900;
+  @apply text-bluegray-300;
+  @apply font-sans;
+  @apply h-full;
+  @apply text-lg;
 }
+
+@tailwind utilities;
