@@ -15,7 +15,7 @@ export default defineConfig({
     strictPort: true,
     port: 3000,
   },
-  appType: 'custom',
+  appType: 'spa',
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',
