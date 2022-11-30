@@ -55,6 +55,7 @@
     "babel-plugin-add-react-displayname": "0.0.5",
     "concurrently": "^7.6.0",
     "cssnano": "^5.1.14",
+    "cz-conventional-changelog": "^3.3.0",
     "dotenv": "^16.0.3",
     "eslint": "^8.28.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -170,5 +171,10 @@
     "singleQuote": true,
     "tabwidth": true,
     "trailingComma": "all"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
