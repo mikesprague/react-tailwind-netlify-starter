@@ -73,7 +73,7 @@
     "netlify-cli": "^12.2.7",
     "netlify-lambda": "^2.0.15",
     "postcss": "^8.4.19",
-    "postcss-cli": "^10.0.0",
+    "postcss-cli": "^10.1.0",
     "prettier": "^2.8.0",
     "prettier-eslint": "^15.0.1",
     "sass": "^1.56.1",
