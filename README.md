@@ -12,6 +12,8 @@ Sets up a barebones React/Tailwind CSS PWA front-end with a Netlify function tha
 - Tailwind
 - Vite
 
+Lighthouse scores (rebuilt every 6 hours): <https://mikesprague.github.io/react-tailwind-netlify-starter/lighthouse-report.html>
+
 ## Getting started
 
 1. `git clone https://github.com/mikesprague/react-tailwind-netlify-starter.git your-project-name`
