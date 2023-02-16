@@ -54,7 +54,7 @@
     "autoprefixer": "10.4.13",
     "babel-plugin-add-react-displayname": "0.0.5",
     "concurrently": "^7.6.0",
-    "cssnano": "^5.1.14",
+    "cssnano": "^5.1.15",
     "cz-git": "^1.4.1",
     "dotenv": "^16.0.3",
     "eslint": "^8.34.0",
