@@ -72,7 +72,7 @@
     "eslint-plugin-security": "^1.7.1",
     "netlify-cli": "^14.2.1",
     "netlify-lambda": "^2.0.16",
-    "postcss": "^8.4.22",
+    "postcss": "^8.4.23",
     "postcss-cli": "^10.1.0",
     "prettier": "^2.8.7",
     "prettier-eslint": "^15.0.1",
