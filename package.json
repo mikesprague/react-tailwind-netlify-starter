@@ -70,7 +70,7 @@
     "eslint-plugin-react": "^7.33.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-security": "^1.7.1",
-    "netlify-cli": "^15.9.1",
+    "netlify-cli": "^15.10.0",
     "netlify-lambda": "^2.0.16",
     "postcss": "^8.4.27",
     "postcss-cli": "^10.1.0",
