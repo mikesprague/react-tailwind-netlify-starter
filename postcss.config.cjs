@@ -1,6 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable global-require */
-
 // safelist any necessary classes here
 const cssSafelistClassArray = [];
 

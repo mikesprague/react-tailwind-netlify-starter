@@ -5,7 +5,46 @@
 		}
 	],
 	"settings": {
-		"cflint.enabled": false,
-		"scss.validate": false
-	},
+		"editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSaveMode": "file",
+    "[javascript]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[jsonl]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[css]": {
+      "editor.defaultFormatter": "stylelint.vscode-stylelint"
+    },
+    "[scss]": {
+      "editor.defaultFormatter": "stylelint.vscode-stylelint"
+    },
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": "always",
+      "source.organizeImports.biome": "always"
+    },
+    "scss.validate": false,
+    "stylelint.validate": [
+      "css",
+      "less",
+      "postcss",
+      "sass",
+      "scss",
+      "source.css.styled",
+      "source.markdown.math",
+      "styled-css"
+    ],
+    "cSpell.words": []
+  },
+  "extensions": {
+    "recommendations": ["biomejs.biome"]
+  }
 }
