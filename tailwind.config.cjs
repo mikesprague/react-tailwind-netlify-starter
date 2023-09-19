@@ -1,7 +1,11 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  content: ['./src/index.html', './src/components/**/*.jsx', './src/modules/**/*.js'],
+  content: [
+    './src/index.html',
+    './src/components/**/*.jsx',
+    './src/modules/**/*.js',
+  ],
   theme: {
     colors: {
       amber: colors.amber,
@@ -34,5 +38,8 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('daisyui'), require('@tailwindcss/typography')],
+  daisyui: {
+    themes: ['light', 'dark', 'night'],
+  },
 };

@@ -9,7 +9,11 @@ module.exports = {
       preset: 'default',
     }),
     require('@fullhuman/postcss-purgecss')({
-      content: ['./src/index.html', './src/index.jsx', './src/components/**/*.jsx'],
+      content: [
+        './src/index.html',
+        './src/index.jsx',
+        './src/components/**/*.jsx',
+      ],
       fontFace: false,
       safelist: cssSafelistClassArray,
     }),
