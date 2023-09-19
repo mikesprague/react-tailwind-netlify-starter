@@ -1,17 +1,3 @@
 @tailwind base;
 @tailwind components;
-
-* {
-  @apply subpixel-antialiased;
-}
-
-html,
-body {
-  @apply bg-gradient-to-br to-bluegray-600 from-cyan-900;
-  @apply text-bluegray-300;
-  @apply font-sans;
-  @apply h-full;
-  @apply text-lg;
-}
-
 @tailwind utilities;
