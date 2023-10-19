@@ -48,7 +48,7 @@
     "@tailwindcss/typography": "0.5.10",
     "@vitejs/plugin-react-swc": "3.4.0",
     "autoprefixer": "10.4.16",
-    "concurrently": "8.2.1",
+    "concurrently": "8.2.2",
     "cssnano": "6.0.1",
     "cz-git": "1.7.1",
     "dotenv": "16.3.1",
