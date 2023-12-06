@@ -55,7 +55,7 @@
     "netlify-cli": "17.9.0",
     "netlify-lambda": "2.0.16",
     "postcss": "8.4.32",
-    "postcss-cli": "10.1.0",
+    "postcss-cli": "11.0.0",
     "sass": "1.69.5",
     "stylelint": "15.11.0",
     "stylelint-config-standard": "34.0.0",
