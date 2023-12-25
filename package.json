@@ -33,7 +33,7 @@
     "@tippyjs/react": "4.2.6",
     "axios": "1.6.2",
     "cross-env": "7.0.3",
-    "daisyui": "4.4.23",
+    "daisyui": "4.4.24",
     "dayjs": "1.11.10",
     "he": "1.2.0",
     "nanoid": "5.0.4",
