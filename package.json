@@ -31,7 +31,7 @@
   "dependencies": {
     "@tailwindcss/typography": "0.5.10",
     "@tippyjs/react": "4.2.6",
-    "axios": "1.6.6",
+    "axios": "1.6.7",
     "cross-env": "7.0.3",
     "daisyui": "4.6.0",
     "dayjs": "1.11.10",
