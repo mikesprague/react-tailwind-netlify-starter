@@ -51,7 +51,7 @@
     "concurrently": "8.2.2",
     "cssnano": "6.0.3",
     "cz-git": "1.8.0",
-    "dotenv": "16.4.4",
+    "dotenv": "16.4.5",
     "netlify-cli": "17.16.3",
     "netlify-lambda": "2.0.16",
     "postcss": "8.4.35",
