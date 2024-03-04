@@ -50,7 +50,7 @@
     "autoprefixer": "10.4.17",
     "concurrently": "8.2.2",
     "cssnano": "6.0.5",
-    "cz-git": "1.8.0",
+    "cz-git": "1.9.0",
     "dotenv": "16.4.5",
     "netlify-cli": "17.17.1",
     "netlify-lambda": "2.0.16",
