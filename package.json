@@ -63,7 +63,7 @@
     "tailwindcss": "3.4.1",
     "vite": "5.2.2",
     "vite-plugin-html": "3.2.2",
-    "vite-plugin-pwa": "0.19.5"
+    "vite-plugin-pwa": "0.19.6"
   },
   "browserslist": {
     "production": [
