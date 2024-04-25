@@ -49,7 +49,7 @@
     "@vitejs/plugin-react-swc": "3.6.0",
     "autoprefixer": "10.4.19",
     "concurrently": "8.2.2",
-    "cssnano": "6.1.2",
+    "cssnano": "7.0.0",
     "cz-git": "1.9.1",
     "dotenv": "16.4.5",
     "netlify-cli": "17.23.0",
