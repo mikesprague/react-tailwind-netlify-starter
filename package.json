@@ -29,7 +29,7 @@
   "homepage": "",
   "license": "MIT",
   "dependencies": {
-    "@tailwindcss/typography": "0.5.12",
+    "@tailwindcss/typography": "0.5.13",
     "@tippyjs/react": "4.2.6",
     "axios": "1.6.8",
     "cross-env": "7.0.3",
@@ -45,7 +45,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.7.1",
     "@fullhuman/postcss-purgecss": "6.0.0",
-    "@tailwindcss/typography": "0.5.12",
+    "@tailwindcss/typography": "0.5.13",
     "@vitejs/plugin-react-swc": "3.6.0",
     "autoprefixer": "10.4.19",
     "concurrently": "8.2.2",
