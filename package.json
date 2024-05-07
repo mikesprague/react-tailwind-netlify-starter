@@ -52,7 +52,7 @@
     "cssnano": "7.0.1",
     "cz-git": "1.9.1",
     "dotenv": "16.4.5",
-    "netlify-cli": "17.23.1",
+    "netlify-cli": "17.23.2",
     "netlify-lambda": "2.0.16",
     "postcss": "8.4.38",
     "postcss-cli": "11.0.0",
