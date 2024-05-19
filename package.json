@@ -4,8 +4,8 @@
   "description": "My project template for a barebones React/Tailwind CSS PWA front-end hosted on Netlify with an example Netlify function that can be used on the back-end",
   "private": true,
   "engines": {
-    "node": ">= 18.x",
-    "npm": ">= 8.x"
+    "node": ">= 20.x",
+    "npm": ">= 10.x"
   },
   "scripts": {
     "build": "vite build && npm run lambda:build",
@@ -52,6 +52,7 @@
     "cssnano": "7.0.1",
     "cz-git": "1.9.1",
     "dotenv": "16.4.5",
+    "jotai": "2.8.0",
     "netlify-cli": "17.23.5",
     "netlify-lambda": "2.0.16",
     "postcss": "8.4.38",
