@@ -1,12 +1,15 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import { apiUrl } from '../modules/helpers';
+import { atom, useAtom } from 'jotai';
+import React, { useEffect } from 'react';
 import { FaGithub, FaQuoteLeft } from 'react-icons/fa';
+import { apiUrl } from '../modules/helpers';
 
 import './App.scss';
 
+const dataAtom = atom(null);
+
 export default function App() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useAtom(dataAtom);
 
   useEffect(() => {
     const getRemoteData = async () => {
@@ -18,7 +21,7 @@ export default function App() {
     };
 
     getRemoteData();
-  }, []);
+  }, [setData]);
 
   return (
     <>
