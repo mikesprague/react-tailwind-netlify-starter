@@ -55,7 +55,7 @@
     "jotai": "2.8.4",
     "netlify-cli": "17.30.0",
     "netlify-lambda": "2.0.16",
-    "postcss": "8.4.38",
+    "postcss": "8.4.39",
     "postcss-cli": "11.0.0",
     "sass": "1.77.6",
     "stylelint": "15.11.0",
