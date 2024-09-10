@@ -53,7 +53,7 @@
     "cz-git": "1.9.4",
     "dotenv": "16.4.5",
     "jotai": "2.9.3",
-    "netlify-cli": "17.35.0",
+    "netlify-cli": "17.36.0",
     "netlify-lambda": "2.0.16",
     "postcss": "8.4.45",
     "postcss-cli": "11.0.0",
