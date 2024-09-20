@@ -52,7 +52,7 @@
     "cssnano": "7.0.6",
     "cz-git": "1.9.4",
     "dotenv": "16.4.5",
-    "jotai": "2.9.3",
+    "jotai": "2.10.0",
     "netlify-cli": "17.36.2",
     "netlify-lambda": "2.0.16",
     "postcss": "8.4.47",
