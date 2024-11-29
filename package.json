@@ -46,7 +46,7 @@
     "@biomejs/biome": "1.9.4",
     "@fullhuman/postcss-purgecss": "7.0.2",
     "@tailwindcss/typography": "0.5.15",
-    "@vitejs/plugin-react-swc": "3.7.1",
+    "@vitejs/plugin-react-swc": "3.7.2",
     "autoprefixer": "10.4.20",
     "concurrently": "9.1.0",
     "cssnano": "7.0.6",
