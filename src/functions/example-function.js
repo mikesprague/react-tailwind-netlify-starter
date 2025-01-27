@@ -1,5 +1,3 @@
-const axios = require('axios').default;
-
 exports.handler = async (event, context, callback) => {
   const callbackHeaders = {
     'Access-Control-Allow-Origin': '*',
@@ -8,14 +6,14 @@ exports.handler = async (event, context, callback) => {
 
   const apiUrl = 'https://icanhazdadjoke.com';
 
-  const returnData = await axios
-    .get(apiUrl, {
-      headers: {
-        Accept: 'application/json',
-        'User-Agent': 'React Tailwind Netlify Starter Template (Example Serverless Function)',
-      },
-    })
-    .then((response) => response.data)
+  const returnData = await fetch(apiUrl, {
+    headers: {
+      Accept: 'application/json',
+      'User-Agent':
+        'React Tailwind Netlify Starter Template (Example Serverless Function)',
+    },
+  })
+    .then((response) => response.json())
     .catch((error) => {
       console.error(error);
       return {
@@ -24,6 +22,7 @@ exports.handler = async (event, context, callback) => {
         body: JSON.stringify(error),
       };
     });
+
   return {
     headers: callbackHeaders,
     statusCode: 200,

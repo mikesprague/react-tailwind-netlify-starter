@@ -1,6 +1,7 @@
-import { VitePWA } from 'vite-plugin-pwa';
-import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react-swc';
+import { defineConfig } from 'vite';
+import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
   root: 'src',
@@ -17,6 +18,7 @@ export default defineConfig({
   },
   appType: 'spa',
   plugins: [
+    tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
     }),

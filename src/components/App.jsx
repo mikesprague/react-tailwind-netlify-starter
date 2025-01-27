@@ -1,10 +1,8 @@
-import axios from 'axios';
 import { atom, useAtom } from 'jotai';
 import React, { useEffect } from 'react';
 import { FaGithub, FaQuoteLeft } from 'react-icons/fa';
-import { apiUrl } from '../modules/helpers';
 
-import './App.scss';
+import { apiUrl } from '../modules/helpers.js';
 
 const dataAtom = atom(null);
 
@@ -13,9 +11,9 @@ export default function App() {
 
   useEffect(() => {
     const getRemoteData = async () => {
-      const remoteData = await axios
-        .get(`${apiUrl()}/example-function`)
-        .then((response) => response.data);
+      const remoteData = await fetch(`${apiUrl()}/example-function`).then(
+        (response) => response.json()
+      );
 
       setData(remoteData);
     };
@@ -34,7 +32,7 @@ export default function App() {
             <blockquote className="mx-auto text-3xl italic leading-normal text-center text-blue-200">
               {data ? (
                 <>
-                  <FaQuoteLeft />
+                  <FaQuoteLeft className="inline mr-1 mb-2" />
                   {` ${data.joke}`}
                 </>
               ) : (
@@ -57,7 +55,7 @@ export default function App() {
       </div>
       <div className="fixed min-w-full text-base text-center bottom-2">
         <a href="https://github.com/mikesprague/react-tailwindcss-netlify-starter">
-          <FaGithub />
+          <FaGithub className="inline" />
           {' Back to repo'}
         </a>
       </div>
