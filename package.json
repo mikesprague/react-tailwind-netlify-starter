@@ -48,7 +48,7 @@
     "@tailwindcss/typography": "0.5.16",
     "@vitejs/plugin-react-swc": "3.8.0",
     "concurrently": "9.1.2",
-    "cz-git": "1.11.0",
+    "cz-git": "1.11.1",
     "dotenv": "16.4.7",
     "netlify-cli": "19.0.0",
     "netlify-lambda": "2.0.16",
