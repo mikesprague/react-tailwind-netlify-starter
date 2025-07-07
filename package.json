@@ -50,7 +50,7 @@
     "concurrently": "9.2.0",
     "cz-git": "1.11.2",
     "dotenv": "17.0.1",
-    "netlify-cli": "22.2.1",
+    "netlify-cli": "22.2.2",
     "netlify-lambda": "2.0.16",
     "stylelint": "16.21.1",
     "stylelint-config-standard": "38.0.0",
