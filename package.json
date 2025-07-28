@@ -32,7 +32,7 @@
     "@tailwindcss/typography": "0.5.16",
     "@tailwindcss/vite": "4.1.11",
     "@tippyjs/react": "4.2.6",
-    "cross-env": "7.0.3",
+    "cross-env": "10.0.0",
     "daisyui": "5.0.48",
     "dayjs": "1.11.13",
     "he": "1.2.0",
