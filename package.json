@@ -33,7 +33,7 @@
     "@tailwindcss/vite": "4.1.11",
     "@tippyjs/react": "4.2.6",
     "cross-env": "7.0.3",
-    "daisyui": "5.0.47",
+    "daisyui": "5.0.48",
     "dayjs": "1.11.13",
     "he": "1.2.0",
     "jotai": "2.12.5",
