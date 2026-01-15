@@ -52,7 +52,7 @@
     "dotenv": "17.2.3",
     "netlify-cli": "23.13.3",
     "netlify-lambda": "2.0.16",
-    "stylelint": "16.26.1",
+    "stylelint": "17.0.0",
     "stylelint-config-standard": "39.0.1",
     "tailwindcss": "4.1.18",
     "vite": "7.3.1",
