@@ -53,7 +53,7 @@
     "netlify-cli": "23.13.3",
     "netlify-lambda": "2.0.16",
     "stylelint": "17.0.0",
-    "stylelint-config-standard": "39.0.1",
+    "stylelint-config-standard": "40.0.0",
     "tailwindcss": "4.1.18",
     "vite": "7.3.1",
     "vite-plugin-html": "3.2.2",
