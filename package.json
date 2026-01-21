@@ -4,9 +4,10 @@
   "description": "My project template for a barebones React/Tailwind CSS PWA front-end hosted on Netlify with an example Netlify function that can be used on the back-end",
   "private": true,
   "engines": {
-    "node": ">= 22.x",
-    "npm": ">= 10.x"
+    "node": ">= 24.x",
+    "npm": ">= 11.x"
   },
+  "packageManager": "npm@11.7.0",
   "scripts": {
     "build": "vite build && npm run lambda:build",
     "clean": "rm -rf ./build && rm -rf ./lambda",
@@ -26,7 +27,7 @@
     "name": "Michael Sprague",
     "email": "mikesprague@gmail.com"
   },
-  "homepage": "",
+  "homepage": "https://github.com/mikesprague/react-tailwindcss-netlify-starter",
   "license": "MIT",
   "dependencies": {
     "@tailwindcss/typography": "0.5.19",
@@ -59,8 +60,18 @@
     "vite-plugin-html": "3.2.2",
     "vite-plugin-pwa": "1.2.0"
   },
+  "overrides": {
+    "braces": "^3.0.3",
+    "elliptic": "^6.6.1",
+    "micromatch": "^4.0.8",
+    "tar": "^7.5.6"
+  },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
@@ -73,7 +84,7 @@
     }
   },
   "volta": {
-    "node": "22.13.1",
-    "npm": "10.9.2"
+    "node": "25.4.0",
+    "npm": "11.7.0"
   }
 }
