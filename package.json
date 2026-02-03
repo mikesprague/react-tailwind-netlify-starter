@@ -62,6 +62,7 @@
   },
   "overrides": {
     "@isaacs/brace-expansion": "^5.0.1",
+    "braces": "^3.0.3",
     "elliptic": "^6.6.1",
     "fastify": "^5.7.4",
     "micromatch": "^4.0.8",
