@@ -31,7 +31,7 @@
   "license": "MIT",
   "dependencies": {
     "@tailwindcss/typography": "0.5.19",
-    "@tailwindcss/vite": "4.2.0",
+    "@tailwindcss/vite": "4.2.1",
     "@tippyjs/react": "4.2.6",
     "cross-env": "10.1.0",
     "daisyui": "5.5.19",
