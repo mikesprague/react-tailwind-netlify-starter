@@ -7,7 +7,7 @@
     "node": ">= 24.x",
     "npm": ">= 11.x"
   },
-  "packageManager": "npm@11.10.0",
+  "packageManager": "npm@11.11.0",
   "scripts": {
     "build": "vite build && npm run lambda:build",
     "clean": "rm -rf ./build && rm -rf ./lambda",
@@ -87,7 +87,7 @@
     }
   },
   "volta": {
-    "node": "25.6.1",
-    "npm": "11.10.0"
+    "node": "25.7.0",
+    "npm": "11.11.0"
   }
 }
