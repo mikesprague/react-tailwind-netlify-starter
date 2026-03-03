@@ -61,13 +61,17 @@
     "vite-plugin-pwa": "1.2.0"
   },
   "overrides": {
-    "@isaacs/brace-expansion": "5.0.1",
-    "braces": "3.0.3",
-    "elliptic": "6.6.1",
-    "fastify": "5.7.4",
-    "micromatch": "4.0.8",
-    "qs": "6.15.0",
-    "tar": "7.5.9"
+    "@isaacs/brace-expansion": "^5.0.1",
+    "ajv": "^8.18.0",
+    "braces": "^3.0.3",
+    "elliptic": "^6.6.1",
+    "fastify": "^5.7.4",
+    "micromatch": "^4.0.8",
+    "minimatch": "^10.2.4",
+    "qs": "^6.15.0",
+    "rollup": "^4.59.0",
+    "serialize-javascript": "^7.0.4",
+    "tar": "^7.5.9"
   },
   "browserslist": {
     "production": [
