@@ -7,7 +7,7 @@
     "node": ">= 24.x",
     "npm": ">= 11.x"
   },
-  "packageManager": "npm@11.11.0",
+  "packageManager": "npm@11.11.1",
   "scripts": {
     "build": "vite build && npm run lambda:build",
     "clean": "rm -rf ./build && rm -rf ./lambda",
@@ -51,7 +51,7 @@
     "concurrently": "9.2.1",
     "cz-git": "1.12.0",
     "dotenv": "17.3.1",
-    "netlify-cli": "24.0.1",
+    "netlify-cli": "24.1.0",
     "netlify-lambda": "2.0.16",
     "stylelint": "17.4.0",
     "stylelint-config-standard": "40.0.0",
@@ -65,13 +65,15 @@
     "ajv": "^8.18.0",
     "braces": "^3.0.3",
     "elliptic": "^6.6.1",
-    "fastify": "^5.7.4",
+    "fastify": "^5.8.2",
+    "file-type": "^21.3.1",
     "micromatch": "^4.0.8",
     "minimatch": "^10.2.4",
     "qs": "^6.15.0",
     "rollup": "^4.59.0",
     "serialize-javascript": "^7.0.4",
-    "tar": "^7.5.9"
+    "svgo": "^4.0.1",
+    "tar": "^7.5.11"
   },
   "browserslist": {
     "production": [
@@ -91,7 +93,7 @@
     }
   },
   "volta": {
-    "node": "25.7.0",
-    "npm": "11.11.0"
+    "node": "25.8.1",
+    "npm": "11.11.1"
   }
 }
