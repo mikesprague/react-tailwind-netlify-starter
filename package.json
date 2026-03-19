@@ -7,7 +7,7 @@
     "node": ">= 24.x",
     "npm": ">= 11.x"
   },
-  "packageManager": "npm@11.11.1",
+  "packageManager": "npm@11.12.0",
   "scripts": {
     "build": "vite build && npm run lambda:build",
     "clean": "rm -rf ./build && rm -rf ./lambda",
@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.8",
-    "@tailwindcss/vite": "insiders",
+    "@tailwindcss/vite": "4.2.2",
     "@tailwindcss/typography": "0.5.19",
     "@vitejs/plugin-react": "6.0.1",
     "concurrently": "9.2.1",
@@ -55,7 +55,7 @@
     "stylelint": "17.4.0",
     "stylelint-config-standard": "40.0.0",
     "tailwindcss": "4.2.2",
-    "vite": "8.0.0",
+    "vite": "8.0.1",
     "vite-plugin-html": "3.2.2",
     "vite-plugin-pwa": "1.2.0"
   },
@@ -65,7 +65,7 @@
     "braces": "^3.0.3",
     "elliptic": "^6.6.1",
     "fastify": "^5.8.2",
-    "file-type": "^21.3.2",
+    "file-type": "^21.3.3",
     "glob": "^13.0.6",
     "micromatch": "^4.0.8",
     "minimatch": "^10.2.4",
@@ -74,7 +74,7 @@
     "serialize-javascript": "^7.0.4",
     "svgo": "^4.0.1",
     "tar": "^7.5.11",
-    "vite": "8.0.0",
+    "vite": "8.0.1",
     "yauzl": "^3.2.1"
   },
   "browserslist": {
@@ -96,6 +96,6 @@
   },
   "volta": {
     "node": "25.8.1",
-    "npm": "11.11.1"
+    "npm": "11.12.0"
   }
 }
