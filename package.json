@@ -49,7 +49,7 @@
     "@vitejs/plugin-react": "6.0.1",
     "concurrently": "9.2.1",
     "cz-git": "1.12.0",
-    "dotenv": "17.4.0",
+    "dotenv": "17.4.1",
     "netlify-cli": "24.9.0",
     "netlify-lambda": "2.0.16",
     "stylelint": "17.6.0",
