@@ -57,7 +57,7 @@
     "tailwindcss": "4.2.4",
     "vite": "8.0.10",
     "vite-plugin-html": "3.2.2",
-    "vite-plugin-pwa": "1.2.0"
+    "vite-plugin-pwa": "1.3.0"
   },
   "overrides": {
     "@fastify/static": "^9.1.3",
