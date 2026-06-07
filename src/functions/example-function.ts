@@ -1,4 +1,14 @@
-exports.handler = async (event, context, callback) => {
+import type { Handler, HandlerEvent, HandlerContext } from '@netlify/functions';
+import { config } from 'dotenv';
+
+config();
+
+const handler: Handler = async (
+  // oxlint-disable-next-line no-unused-vars
+  event: HandlerEvent,
+  // oxlint-disable-next-line no-unused-vars
+  context: HandlerContext
+) => {
   const callbackHeaders = {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Headers': 'Content-Type',
@@ -29,3 +39,5 @@ exports.handler = async (event, context, callback) => {
     body: JSON.stringify(returnData),
   };
 };
+
+export { handler };

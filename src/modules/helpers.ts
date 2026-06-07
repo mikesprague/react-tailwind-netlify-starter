@@ -1,5 +1,8 @@
 export function isDev() {
-  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+  if (
+    window.location.hostname === 'localhost' ||
+    window.location.hostname === '127.0.0.1'
+  ) {
     return true;
   }
 
@@ -14,6 +17,6 @@ export function apiUrl() {
   return `https://${window.location.hostname}/.netlify/functions`;
 }
 
-export function handleError(error) {
+export function handleError(error: Error) {
   console.error(error);
 }
