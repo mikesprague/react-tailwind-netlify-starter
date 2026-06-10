@@ -1,3 +1,5 @@
+import path from 'node:path';
+
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
@@ -11,7 +13,6 @@ export default defineConfig({
   },
   publicDir: '../public',
   base: './',
-  outDir: './',
   server: {
     strictPort: true,
     port: 3000,
@@ -23,8 +24,12 @@ export default defineConfig({
       registerType: 'autoUpdate',
     }),
     react({
-      // Use React plugin in all *.jsx and *.tsx files
-      include: '**/*.{jsx,tsx}',
+      include: '**/*.tsx',
     }),
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
 });
