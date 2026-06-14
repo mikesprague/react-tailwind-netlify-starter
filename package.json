@@ -8,7 +8,7 @@
     "node": ">= 24.x",
     "npm": ">= 11.x"
   },
-  "packageManager": "npm@11.16.0",
+  "packageManager": "npm@11.17.0",
   "scripts": {
     "build": "npx vite build && npm run lambda:build",
     "clean": "rm -rf ./build && rm -rf ./lambda",
@@ -57,7 +57,7 @@
     "@netlify/functions": "5.3.0",
     "@netlify/vite-plugin": "2.12.7",
     "@tailwindcss/typography": "0.5.20",
-    "@tailwindcss/vite": "4.3.0",
+    "@tailwindcss/vite": "4.3.1",
     "@types/node": "25.9.3",
     "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
@@ -69,7 +69,7 @@
     "netlify-cli": "26.1.0",
     "oxfmt": "0.54.0",
     "oxlint": "1.69.0",
-    "tailwindcss": "4.3.0",
+    "tailwindcss": "4.3.1",
     "typescript": "6.0.3",
     "vite": "8.0.16",
     "vite-plugin-html": "3.2.2",
@@ -81,6 +81,7 @@
     "ajv": "^8.20.0",
     "brace-expansion": "^5.0.6",
     "braces": "^3.0.3",
+    "esbuild": "^0.28.1",
     "fastify": "^5.8.5",
     "file-type": "^22.0.1",
     "glob": "^13.0.6",
@@ -88,7 +89,7 @@
     "micromatch": "^4.0.8",
     "minimatch": "^10.2.5",
     "qs": "^6.15.2",
-    "rollup": "^4.61.1",
+    "rollup": "^4.62.0",
     "serialize-javascript": "^7.0.5",
     "svgo": "^4.0.1",
     "tar": "^7.5.16",
@@ -113,6 +114,13 @@
   },
   "volta": {
     "node": "26.3.0",
-    "npm": "11.16.0"
+    "npm": "11.17.0"
+  },
+  "allowScripts": {
+    "netlify-cli@26.1.0": true,
+    "esbuild@0.28.1": true,
+    "sharp@0.34.5": true,
+    "@parcel/watcher@2.5.6": true,
+    "unix-dgram@2.0.7": true
   }
 }
