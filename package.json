@@ -67,7 +67,7 @@
     "cz-git": "1.13.1",
     "globals": "17.7.0",
     "netlify-cli": "26.2.0",
-    "oxfmt": "0.59.0",
+    "oxfmt": "0.60.0",
     "oxlint": "1.75.0",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
