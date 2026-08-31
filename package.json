@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "@netlify/functions": "6.0.0",
-    "@netlify/vite-plugin": "2.12.9",
+    "@netlify/vite-plugin": "3.0.0",
     "@tailwindcss/typography": "0.5.20",
     "@tailwindcss/vite": "4.3.3",
     "@types/node": "26.4.0",
