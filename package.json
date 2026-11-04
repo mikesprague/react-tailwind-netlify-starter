@@ -65,7 +65,7 @@
     "concurrently": "10.0.6",
     "cssnano": "9.9.0",
     "cz-git": "1.14.0",
-    "globals": "17.13.0",
+    "globals": "17.14.0",
     "netlify-cli": "27.16.1",
     "oxfmt": "0.75.0",
     "oxlint": "1.90.0",
